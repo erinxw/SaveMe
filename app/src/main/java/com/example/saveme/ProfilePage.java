@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ProfilePageTest extends AppCompatActivity {
+public class ProfilePage extends AppCompatActivity {
 
 
     @Override
@@ -15,15 +15,17 @@ public class ProfilePageTest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
 
+
         Button yourButton = (Button) findViewById(R.id.submit_button);
 
         yourButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(ProfilePageTest.this, LoginPageIfCorrectPassword.class));
+                startActivity(new Intent(ProfilePage.this, LoginPageIfCorrectPassword.class));
             }
         });
 
     }
+
 
 
 

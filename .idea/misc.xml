@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/drawable/ic_home_foreground.xml" value="0.1715" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/drawable/rounded_corner.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_2.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_change_password.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_login_page.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_login_page1.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_login_page2.xml" value="0.16" />
@@ -12,11 +14,13 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_main.xml" value="0.21" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_profile_page.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_profile_page_test.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_registration_page.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_resgistration_page.xml" value="0.12" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_test.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/fragment_launch_screen.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/fragment_launch_screen_activity.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/fragment_login_activity.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/menu/bottom_nav_menu.xml" value="0.15165876777251186" />
       </map>
     </option>
   </component>

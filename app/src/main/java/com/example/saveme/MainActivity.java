@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class MainActivity extends AppCompatActivity {
     private Button lbutton, rbutton;
 
@@ -38,4 +40,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RegistrationPage.class);
         startActivity(intent);
     }
+
+
 }

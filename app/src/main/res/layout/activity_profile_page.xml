@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPageIfCorrectPassword">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="489dp"
+        android:layout_height="927dp"
+        app:srcCompat="@drawable/screenshot__321_"
+        tools:layout_editor_absoluteX="-30dp"
+        tools:layout_editor_absoluteY="-29dp" />
+
+    <TextView
+        android:id="@+id/text_save_me5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="61dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/sugo_pro_display_light_trial"
+        android:text="PROFILE"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/relay_didact_gothic_regular"
+        android:text="NAME"
+        android:textAlignment="textStart"
+        android:textColor="#4F4F4F"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_save_me5" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FDBE8A"
+        android:fontFamily="@font/relay_didact_gothic_regular"
+        android:text="Delete Account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_button2" />
+
+    <Button
+        android:id="@+id/submit_button2"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FDBE8A"
+        android:fontFamily="@font/relay_didact_gothic_regular"
+        android:text="Set Up Income"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/black"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_button3" />
+
+    <Button
+        android:id="@+id/submit_button3"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="290dp"
+        android:backgroundTint="#FDBE8A"
+        android:fontFamily="@font/relay_didact_gothic_regular"
+        android:text="Change Password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/black"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
