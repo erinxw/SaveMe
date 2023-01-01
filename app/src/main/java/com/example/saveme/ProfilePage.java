@@ -13,16 +13,16 @@ public class ProfilePage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_page);
+        setContentView(R.layout.activity_profile_page);
 
-
-        Button yourButton = (Button) findViewById(R.id.submit_button);
+        Button yourButton = (Button) findViewById(R.id.change_password_button);
 
         yourButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(ProfilePage.this, LoginPageIfCorrectPassword.class));
+                startActivity(new Intent(ProfilePage.this, ChangePassword.class));
             }
         });
+
 
     }
 
@@ -30,3 +30,6 @@ public class ProfilePage extends AppCompatActivity {
 
 
 }
+
+
+

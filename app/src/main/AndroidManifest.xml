@@ -14,18 +14,20 @@
         android:theme="@style/Theme.SaveMe"
         tools:targetApi="31">
         <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
             android:name=".LoginPageIfCorrectPassword"
             android:exported="false" />
         <activity
             android:name=".RegistrationPage"
             android:exported="false" />
         <activity
-            android:name=".LoginPage"
+            android:name=".ProfilePage"
             android:exported="false" />
         <activity
-            android:name=".ui.login.LoginPage"
-            android:exported="false"
-            android:label="@string/title_activity_login_page" />
+            android:name=".LoginPage"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
