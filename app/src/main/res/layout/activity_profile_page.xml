@@ -6,6 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".LoginPageIfCorrectPassword">
 
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="489dp"
@@ -59,10 +79,10 @@
         android:textSize="21sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submit_button2" />
+        app:layout_constraintTop_toBottomOf="@+id/income_setup_button" />
 
     <Button
-        android:id="@+id/submit_button2"
+        android:id="@+id/income_setup_button"
         android:layout_width="305dp"
         android:layout_height="50dp"
         android:backgroundTint="#FDBE8A"
@@ -99,6 +119,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
+
 
 
 
