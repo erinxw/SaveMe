@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="58dp"
-        android:layout_marginTop="61dp"
+        android:layout_marginTop="3dp"
         android:layout_weight="1"
         android:fontFamily="@font/sugo_pro_display_light_trial"
         android:text="SETUP"
@@ -64,23 +64,22 @@
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/text_save_me3" />
 
     <TextView
         android:id="@+id/text_save_me3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="58dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginBottom="438dp"
+        android:layout_marginTop="30dp"
         android:layout_weight="1"
         android:fontFamily="@font/sugo_pro_display_light_trial"
         android:text="INCOME"
         android:textAlignment="viewStart"
         android:textColor="#000000"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/change_password_button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -89,7 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="218dp"
+        android:layout_marginTop="170dp"
         android:fontFamily="@font/relay_didact_gothic_regular"
         android:text="Income"
         android:textAlignment="textStart"
@@ -105,7 +104,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="332dp"
+        android:layout_marginTop="35dp"
         android:fontFamily="@font/relay_didact_gothic_regular"
         android:text="Amount"
         android:textAlignment="textStart"
@@ -115,23 +114,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_income_name" />
 
     <Button
-        android:id="@+id/change_password_button"
+        android:id="@+id/income_setup_button2"
         android:layout_width="305dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="324dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#FDBE8A"
         android:fontFamily="@font/relay_didact_gothic_regular"
         android:text="Submit"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/black"
         android:textSize="21sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_save_me3" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_income_amount" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/enter_income_name"

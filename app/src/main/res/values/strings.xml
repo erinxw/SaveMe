@@ -17,6 +17,15 @@
         <item>What is the name of the city you grew up in?</item>
         <item>What is the name of your primary school?</item>
     </string-array>
+    <string-array name="spending_category">
+        <item>Food</item>
+        <item>Transportation</item>
+        <item>Shopping</item>
+        <item>Housing</item>
+        <item>Entertainment</item>
+        <item>Medical</item>
+        <item>Miscellaneous</item>
+    </string-array>
     <string name="title_activity_bottom_navigation_view">BottomNavigationView</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
