@@ -13,13 +13,13 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_2.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_bottom_navigation_view.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_change_password.xml" value="0.2" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_income_setup.xml" value="0.14" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_income_setup.xml" value="0.17" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_login_page.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_login_page1.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_login_page2.xml" value="0.16" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_login_page_if_correct_password.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_main.xml" value="0.21" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_profile_page.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_profile_page.xml" value="0.14" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_profile_page_test.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_registration_page.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_resgistration_page.xml" value="0.12" />
@@ -29,6 +29,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/fragment_launch_screen_activity.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/fragment_login_activity.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/fragment_logout.xml" value="0.12364130434782608" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/pop_window.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/menu/bottom_nav_menu.xml" value="0.15165876777251186" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />

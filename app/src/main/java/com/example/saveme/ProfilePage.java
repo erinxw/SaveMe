@@ -38,6 +38,14 @@ public class ProfilePage extends AppCompatActivity {
             }
         });
 
+        Button deleteAccountButton = (Button) findViewById(R.id.delete_account_button);
+
+        deleteAccountButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(ProfilePage.this, Pop.class));
+            }
+        });
+
     }
 
 

@@ -15,7 +15,7 @@ public class LoginPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
 
-        Button yourButton = (Button) findViewById(R.id.submit_button);
+        Button yourButton = (Button) findViewById(R.id.delete_account_button);
 
         yourButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
