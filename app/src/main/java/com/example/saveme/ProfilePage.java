@@ -33,15 +33,23 @@ public class ProfilePage extends AppCompatActivity {
 
                 switch(item.getItemId())
                 {
+                    case R.id.logout:
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
                     case R.id.history:
                         startActivity(new Intent(getApplicationContext(),SpendingHistoryPage.class));
                         overridePendingTransition(0,0);
                         return true;
-                    case R.id.profile:
+                    case R.id.home:
+                        startActivity(new Intent(getApplicationContext(),HomePage.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.saving:
                         startActivity(new Intent(getApplicationContext(),ManageSavingPage.class));
                         overridePendingTransition(0,0);
+                        return true;
+                    case R.id.profile:
                         return true;
                 }
                 return false;
