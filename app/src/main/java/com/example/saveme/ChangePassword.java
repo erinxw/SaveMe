@@ -9,11 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ChangePassword extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Show Change Password page
         setContentView(R.layout.activity_change_password);
-
     }
 }

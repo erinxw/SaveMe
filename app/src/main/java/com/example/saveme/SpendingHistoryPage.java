@@ -20,8 +20,10 @@ public class SpendingHistoryPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Show Spending History page
         setContentView(R.layout.activity_spending_history_page);
 
+        // Use BottomNavigationView to create a bottom navigation bar that consists of logout, spending history, home, manage saving and profile buttons
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
 
         bottomNavigationView.setSelectedItemId(R.id.history);
@@ -32,24 +34,25 @@ public class SpendingHistoryPage extends AppCompatActivity {
 
                 switch(item.getItemId())
                 {
+                    // If the logout button is clicked, display Launch Screen
                     case R.id.logout:
                         startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         overridePendingTransition(0,0);
                         return true;
+                    // If the Spending History button is clicked, display Spending History page
                     case R.id.history:
                         return true;
+                    // If the Home button is clicked, display Home page
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext(),HomePage.class));
                         overridePendingTransition(0,0);
                         return true;
-//                    case R.id.add_spending:
-//                        startActivity(new Intent(getApplicationContext(),AddSpendingPage.class));
-//                        overridePendingTransition(0,0);
-//                        return true;
+                    // If the Manage Saving button is clicked, display Manage Saving page
                     case R.id.saving:
                         startActivity(new Intent(getApplicationContext(),ManageSavingPage.class));
                         overridePendingTransition(0,0);
                         return true;
+                    // If the Profile button is clicked, display Profile page
                     case R.id.profile:
                         startActivity(new Intent(getApplicationContext(),ProfilePage.class));
                         overridePendingTransition(0,0);

@@ -15,14 +15,15 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.saveme.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-
 public class ManageSavingPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Show Manage Saving page
         setContentView(R.layout.activity_manage_saving_page);
 
+        // Use BottomNavigationView to create a bottom navigation bar that consists of logout, spending history, home, manage saving and profile buttons
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
 
         bottomNavigationView.setSelectedItemId(R.id.saving);
@@ -33,20 +34,25 @@ public class ManageSavingPage extends AppCompatActivity {
 
                 switch(item.getItemId())
                 {
+                    // If the logout button is clicked, display Launch Screen
                     case R.id.logout:
                         startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         overridePendingTransition(0,0);
                         return true;
+                    // If the Spending History button is clicked, display Spending History page
                     case R.id.history:
                         startActivity(new Intent(getApplicationContext(),SpendingHistoryPage.class));
                         overridePendingTransition(0,0);
                         return true;
+                    // If the Home button is clicked, display Home page
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext(),HomePage.class));
                         overridePendingTransition(0,0);
                         return true;
+                    // If the Manage Saving button is clicked, display Manage Saving page
                     case R.id.saving:
                         return true;
+                    // If the Profile button is clicked, display Profile page
                     case R.id.profile:
                         startActivity(new Intent(getApplicationContext(),ProfilePage.class));
                         overridePendingTransition(0,0);
@@ -56,6 +62,7 @@ public class ManageSavingPage extends AppCompatActivity {
             }
         });
 
+        // When the Add Income button is clicked, display Add Income page
         Button addIncomeButton = (Button) findViewById(R.id.add_income_button);
 
         addIncomeButton.setOnClickListener(new View.OnClickListener(){

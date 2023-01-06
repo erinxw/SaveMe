@@ -10,36 +10,29 @@ import android.widget.Button;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
-    private Button lbutton, rbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Show Launch Screen
         setContentView(R.layout.activity_main);
 
-        lbutton = (Button) findViewById(R.id.login_button);
-        lbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
+        // When "Login" button is clicked, display Login page
+        Button loginButton = (Button) findViewById(R.id.login_button);
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openLoginActivity();
+                startActivity(new Intent(MainActivity.this, LoginPage.class));
             }
         });
-        rbutton = (Button) findViewById(R.id.register_button);
-        rbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { openRegisterActivity(); }
+
+        // When "Register" button is clicked, display Register page
+        Button registerButton = (Button) findViewById(R.id.register_button);
+
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, RegistrationPage.class));
+            }
         });
     }
-
-    private void openLoginActivity() {
-        Intent intent = new Intent(this, LoginPage.class);
-        startActivity(intent);
-    }
-
-    private void openRegisterActivity() {
-        Intent intent = new Intent(this, RegistrationPage.class);
-        startActivity(intent);
-    }
-
-
 }

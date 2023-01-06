@@ -12,8 +12,10 @@ public class LoginPageIfCorrectPassword extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Show Login page if the password is entered correctly
         setContentView(R.layout.activity_login_page_if_correct_password);
 
+        // When the "Let's Start" button is clicked, the user is signed in and they are directed to the Home page
         Button startButton = (Button) findViewById(R.id.lets_start_button);
 
         startButton.setOnClickListener(new View.OnClickListener(){

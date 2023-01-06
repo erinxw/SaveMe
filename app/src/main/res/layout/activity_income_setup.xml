@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF0DE"
     tools:context=".LoginPageIfCorrectPassword">
 
     <ImageView
@@ -14,6 +15,16 @@
         app:layout_constraintTop_toTopOf="@+id/imageView7"
         app:srcCompat="@drawable/screenshot__325_"
         tools:layout_editor_absoluteX="-30dp" />
+
+    <ImageView
+        android:id="@+id/background4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/photo_6179343193523466843_y___copy" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -43,7 +54,6 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
-            android:backgroundTint="#FDBE8A"
             android:fontFamily="@font/relay_didact_gothic_regular"
             android:hint="Enter the income amount"
             android:textSize="21sp" />
@@ -71,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="58dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:fontFamily="@font/sugo_pro_display_light_trial"
         android:text="INCOME"
@@ -146,7 +156,6 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
-            android:backgroundTint="#FDBE8A"
             android:fontFamily="@font/relay_didact_gothic_regular"
             android:hint="Enter the income name"
             android:textSize="21sp" />

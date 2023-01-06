@@ -12,9 +12,10 @@ public class Pop extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        // Show pop-up window to ask for confirmation before deleting account
         setContentView(R.layout.pop_window);
 
+        // Use DisplayMetrics to set the width and height of the pop-up window
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
 
@@ -23,6 +24,8 @@ public class Pop extends Activity {
 
         getWindow().setLayout((int)(width*.8),(int)(height*.2));
 
+        // When the "Yes" button is clicked, the details of the user are removed from the database and another
+        // window pops up to confirm that their account has been deleted
         Button deleteAccountButton = (Button) findViewById(R.id.yes_button);
 
         deleteAccountButton.setOnClickListener(new View.OnClickListener(){
@@ -31,7 +34,9 @@ public class Pop extends Activity {
             }
         });
 
-        Button dontDeleteAccountButton = (Button) findViewById(R.id.no_button);
+        // When the "No" button is clicked, it indicates that the user does not want to delete their account, thus
+        // they are directed back to Profile page
+        Button dontDeleteAccountButton = (Button) findViewById(R.id.okay_button);
 
         dontDeleteAccountButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

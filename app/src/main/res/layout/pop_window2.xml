@@ -3,17 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/pop_up_shape">
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="263dp"
             android:layout_height="57dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:fontFamily="@font/relay_didact_gothic_regular"
             android:text="Your account has been deleted."
             android:textAlignment="center"
@@ -25,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/no_button"
+            android:id="@+id/okay_button"
             android:layout_width="150dp"
             android:layout_height="0dp"
             android:backgroundTint="#FDBE8A"

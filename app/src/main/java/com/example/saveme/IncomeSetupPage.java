@@ -12,6 +12,7 @@ public class IncomeSetupPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Show Income Setup page
         setContentView(R.layout.activity_income_setup);
     }
 }

@@ -7,12 +7,22 @@
     tools:context=".HomePage">
 
 
+    <ImageView
+        android:id="@+id/background3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/photo_6179343193523466843_y___copy" />
+
     <TextView
         android:id="@+id/text_save_me13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="58dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:fontFamily="@font/sugo_pro_display_light_trial"
         android:text="HOME"
@@ -34,20 +44,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_spending_button"
         app:menu="@menu/bottom_nav_menu" />
 
     <ImageButton
         android:id="@+id/add_spending_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="529dp"
-        android:layout_marginBottom="15dp"
         android:background="@null"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_spending_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

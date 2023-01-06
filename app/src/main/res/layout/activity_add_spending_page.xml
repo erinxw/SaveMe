@@ -4,19 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF0DE"
     tools:context=".AddSpendingPage">
+
+    <ImageView
+        android:id="@+id/background2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/photo_6179343193523466843_y___copy" />
 
     <Spinner
         android:id="@+id/spending_category_spinner"
-        android:layout_width="340dp"
-        android:layout_height="36dp"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/text_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
@@ -32,11 +43,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_save_me11"
+        android:id="@+id/text_ADD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="58dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:fontFamily="@font/sugo_pro_display_light_trial"
         android:text="ADD"
@@ -49,7 +60,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_save_me12"
+        android:id="@+id/text_INCOME"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="58dp"
@@ -62,7 +73,7 @@
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_save_me11" />
+        app:layout_constraintTop_toBottomOf="@+id/text_ADD" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/enter_date"
@@ -72,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21">
+        app:layout_constraintTop_toBottomOf="@+id/text_date">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/date"
@@ -80,7 +91,6 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
-            android:backgroundTint="#FDBE8A"
             android:fontFamily="@font/relay_didact_gothic_regular"
             android:hint="Enter the date"
             android:textSize="21sp" />
@@ -88,7 +98,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/text_amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
@@ -102,7 +112,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter_spending_name" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_income_name" />
 
     <TextView
         android:id="@+id/textView27"
@@ -119,10 +129,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter_cost" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_amount" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/text_income"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
@@ -139,22 +149,21 @@
         app:layout_constraintTop_toBottomOf="@+id/enter_date" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/enter_cost"
+        android:id="@+id/enter_amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:hintTextColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22">
+        app:layout_constraintTop_toBottomOf="@+id/text_amount">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/cost"
+            android:id="@+id/amount"
             android:layout_width="311dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
-            android:backgroundTint="#FDBE8A"
             android:fontFamily="@font/relay_didact_gothic_regular"
             android:hint="Enter the cost"
             android:textSize="21sp" />
@@ -162,21 +171,20 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/enter_spending_name"
+        android:id="@+id/enter_income_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:hintTextColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25">
+        app:layout_constraintTop_toBottomOf="@+id/text_income">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/spending_name"
+            android:id="@+id/income_name"
             android:layout_width="311dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
-            android:backgroundTint="#FDBE8A"
             android:fontFamily="@font/relay_didact_gothic_regular"
             android:hint="Enter what you spent on"
             android:textSize="21sp" />
@@ -184,7 +192,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/income_setup_button5"
+        android:id="@+id/add_button"
         android:layout_width="305dp"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"

@@ -15,12 +15,22 @@
         tools:layout_editor_absoluteX="-56dp"
         tools:layout_editor_absoluteY="-32dp" />
 
+    <ImageView
+        android:id="@+id/background5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/photo_6179343193523466843_y___copy" />
+
     <TextView
         android:id="@+id/text_save_me9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="58dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:fontFamily="@font/sugo_pro_display_light_trial"
         android:text="MANAGE"
@@ -98,9 +108,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="35dp"
         android:fontFamily="@font/relay_didact_gothic_regular"
-        android:text="Target Saving"
+        android:text="Saving Target"
         android:textAlignment="textStart"
         android:textColor="#000000"
         android:textSize="21sp"

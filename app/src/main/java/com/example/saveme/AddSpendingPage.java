@@ -22,50 +22,17 @@ public class AddSpendingPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Show Add Spending page
         setContentView(R.layout.activity_add_spending_page);
 
+        // Create spinner to display array of spending category choices in the form of dropdown list for the user to select
         Spinner spinnerQuestions=findViewById(R.id.spending_category_spinner);
 
-        ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this, R.array.spending_category, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(
+                this,
+                R.array.spending_category,
+                R.layout.spinner_list);
 
         spinnerQuestions.setAdapter(adapter);
-
-//        BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
-//
-//        bottomNavigationView.setSelectedItemId(R.id.history);
-//
-//        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//
-//                switch(item.getItemId())
-//                {
-//                    case R.id.logout:
-//                        startActivity(new Intent(getApplicationContext(),Logout.class));
-//                        overridePendingTransition(0,0);
-//                        return true;
-//                    case R.id.history:
-//                        startActivity(new Intent(getApplicationContext(),SpendingHistoryPage.class));
-//                        overridePendingTransition(0,0);
-//                        return true;
-//                    case R.id.home:
-//                        startActivity(new Intent(getApplicationContext(),HomePage.class));
-//                        overridePendingTransition(0,0);
-//                        return true;
-//                    case R.id.add_spending:
-//                        return true;
-//                    case R.id.saving:
-//                        startActivity(new Intent(getApplicationContext(),ManageSavingPage.class));
-//                        overridePendingTransition(0,0);
-//                        return true;
-//                    case R.id.profile:
-//                        startActivity(new Intent(getApplicationContext(),ProfilePage.class));
-//                        overridePendingTransition(0,0);
-//                        return true;
-//                }
-//                return false;
-//            }
-//        });
     }
 }

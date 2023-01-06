@@ -11,24 +11,26 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/drawable/ic_logout_foreground.xml" value="0.1685" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/drawable/ic_profile_foreground.xml" value="0.1685" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/drawable/ic_spending_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/drawable/pop_up_shape.xml" value="0.15" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/drawable/rounded_corner.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/drawable/selector.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/drawable/textview_border.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_2.xml" value="0.22" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_add_income_page.xml" value="0.25" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_add_spending_page.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_add_income_page.xml" value="0.14" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_add_spending_page.xml" value="0.14" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_bottom_navigation_view.xml" value="0.1" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_change_password.xml" value="0.2" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_home_page.xml" value="0.18" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_income_setup.xml" value="0.25" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_login_page.xml" value="0.18" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_change_password.xml" value="0.12" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_home_page.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_income_setup.xml" value="0.18" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_login_page.xml" value="0.12" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_login_page1.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_login_page2.xml" value="0.16" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_login_page_if_correct_password.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_logout.xml" value="0.17753623188405798" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_main.xml" value="0.21" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_manage_saving_page.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_main.xml" value="0.15" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_manage_saving_page.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_pop2.xml" value="0.22" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_profile_page.xml" value="0.21" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_profile_page.xml" value="0.17" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_profile_page_test.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_registration_page.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/activity_resgistration_page.xml" value="0.12" />
@@ -44,9 +46,12 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/fragment_spending__history__page.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/pop_window.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/pop_window2.xml" value="0.1721014492753623" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/layout/spinner_list.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/menu/bottom_nav_menu.xml" value="0.15165876777251186" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/menu/bottom_nav_menu2.xml" value="0.12" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/mipmap-anydpi-v26/ic_history.xml" value="0.15" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/mipmap-anydpi-v26/ic_history_round.xml" value="0.15" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SaveMe/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.151" />
       </map>

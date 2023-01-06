@@ -24,9 +24,6 @@
             android:name=".HomePage"
             android:exported="false" />
         <activity
-            android:name=".Logout"
-            android:exported="false" />
-        <activity
             android:name=".ManageSavingPage"
             android:exported="false" />
         <activity
@@ -34,32 +31,46 @@
             android:exported="false" />
         <activity
             android:name=".AddSpendingPage"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".HomePage" />
         <activity
             android:name=".ChangePassword"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".ProfilePage" />
         <activity
             android:name=".LoginPageIfCorrectPassword"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".LoginPage" />
         <activity
             android:name=".RegistrationPage"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ProfilePage"
             android:exported="false" />
         <activity
             android:name=".LoginPage"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddIncomePage"
+            android:exported="false"
+            android:parentActivityName=".ManageSavingPage" />
+        <activity
+            android:name=".IncomeSetupPage"
+            android:exported="false"
+            android:parentActivityName=".ProfilePage" />
+        <activity
+            android:name=".Pop2"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".Pop" />
     </application>
-
 </manifest>
