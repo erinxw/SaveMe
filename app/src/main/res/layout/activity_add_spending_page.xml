@@ -75,27 +75,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_ADD" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/enter_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:hintTextColor="#000000"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="412dp"
+        android:layout_height="65dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_date">
+        app:layout_constraintTop_toBottomOf="@+id/text_date"
+        tools:ignore="MissingConstraints">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/date"
+        <EditText
+            android:id="@+id/enter_date"
             android:layout_width="311dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
             android:fontFamily="@font/relay_didact_gothic_regular"
-            android:hint="Enter the date"
-            android:textSize="21sp" />
+            android:hint="   Enter the date"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/text_amount"
@@ -146,7 +148,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter_date" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/enter_amount"
