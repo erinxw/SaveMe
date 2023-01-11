@@ -106,7 +106,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
+    <Button
+        android:id="@+id/add_daily_budget_button"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FDBE8A"
+        android:fontFamily="@font/relay_didact_gothic_regular"
+        android:text="Add Daily Budget"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/black"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income_setup_button" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
