@@ -110,6 +110,14 @@ public class ProfilePage extends AppCompatActivity {
                 startActivity(new Intent(ProfilePage.this, IncomeSetupPage.class));
             }
         });
+        
+        Button addDailyBudgetButton = (Button) findViewById(R.id.add_daily_budget_button);
+
+        addDailyBudgetButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(ProfilePage.this, AddDailyBudget.class));
+            }
+        });
 
         // When "Delete Account" button is clicked, display a pop-up window that asks for confirmation
         // whether to delete the account or not
