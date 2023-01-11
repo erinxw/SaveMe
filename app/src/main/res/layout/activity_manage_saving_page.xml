@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ManageSavingPage">
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="523dp"
-        android:layout_height="932dp"
-        android:visibility="invisible"
-        app:srcCompat="@drawable/screenshot__329_"
-        tools:layout_editor_absoluteX="-56dp"
-        tools:layout_editor_absoluteY="-32dp" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView9"-->
+<!--        android:layout_width="523dp"-->
+<!--        android:layout_height="932dp"-->
+<!--        android:visibility="invisible"-->
+<!--        app:srcCompat="@drawable/screenshot__329_"-->
+<!--        tools:layout_editor_absoluteX="-56dp"-->
+<!--        tools:layout_editor_absoluteY="-32dp" />-->
 
     <ImageView
         android:id="@+id/background5"
@@ -145,20 +145,40 @@
         android:textColor="@android:color/black"
         android:textSize="21sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintTop_toBottomOf="@+id/vieww" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        app:itemBackground="@color/bottom_nav_menu_background_color"
-        app:itemIconTint="@drawable/selector"
-        app:itemTextColor="@drawable/selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/vieww"
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewTarget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <!--    app:itemBackground="@color/bottom_nav_menu_background_color"-->
+<!--    app:itemIconTint="@drawable/selector"-->
+<!--    app:itemTextColor="@drawable/selector"-->
 </androidx.constraintlayout.widget.ConstraintLayout>

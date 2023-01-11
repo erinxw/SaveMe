@@ -11,12 +11,20 @@
     <string name="login_failed">"Login failed"</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string-array name="questions">
         <item>What is the name of your first pet?</item>
         <item>Where did your parents first meet?</item>
         <item>What is the name of the city you grew up in?</item>
         <item>What is the name of your primary school?</item>
     </string-array>
+
+    <string-array name="IncomeSetupType">
+        <item>Utility</item>
+        <item>Monthly Income</item>
+        <item>House Rent</item>
+    </string-array>
+
     <string-array name="spending_category">
         <item>Food</item>
         <item>Transportation</item>
@@ -26,6 +34,7 @@
         <item>Medical</item>
         <item>Miscellaneous</item>
     </string-array>
+
     <string name="title_activity_bottom_navigation_view">BottomNavigationView</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

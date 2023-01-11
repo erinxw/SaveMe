@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:stretchColumns="1,2,3,4">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_height="match_parent"
+            android:layout_width="11dp"
+            android:layout_column="1"
+            android:padding="10dp"
+            android:fontFamily="@font/relay_didact_gothic_regular"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textSize="16dp"
+
+            />
+
+        <TextView
+            android:id="@+id/detail_tv"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_column="1"
+            android:padding="11dp"
+            android:fontFamily="@font/relay_didact_gothic_regular"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textSize="16dp"
+
+             />
+
+        <TextView
+            android:id="@+id/amount_tv"
+            android:layout_height="match_parent"
+            android:layout_width="27dp"
+            android:layout_column="1"
+            android:padding="11dp"
+            android:fontFamily="@font/relay_didact_gothic_regular"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textSize="16dp"
+
+            />
+
+        <TextView
+            android:id="@+id/category_tv"
+            android:layout_height="match_parent"
+            android:layout_width="82dp"
+            android:layout_column="1"
+            android:fontFamily="@font/relay_didact_gothic_regular"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:padding="10dp"
+            android:textSize="16dp"
+
+            />
+
+
+    </TableRow>
+
+</TableLayout>

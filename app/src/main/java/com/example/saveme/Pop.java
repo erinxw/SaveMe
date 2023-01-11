@@ -7,7 +7,12 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Pop extends Activity {
+    DatabaseReference DB = FirebaseDatabase.getInstance().getReferenceFromUrl("https://saveme-3a2cf-default-rtdb.firebaseio.com/")
+            .child("user");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +34,10 @@ public class Pop extends Activity {
         Button deleteAccountButton = (Button) findViewById(R.id.yes_button);
 
         deleteAccountButton.setOnClickListener(new View.OnClickListener(){
+
             public void onClick(View v){
+
+                DB.child(MainActivity.usernmae).removeValue();
                 startActivity(new Intent(Pop.this, Pop2.class));
             }
         });

@@ -24,7 +24,8 @@
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/text_date"
@@ -168,6 +169,7 @@
             android:background="@drawable/rounded_corner"
             android:fontFamily="@font/relay_didact_gothic_regular"
             android:hint="Enter the cost"
+            android:inputType="number|numberDecimal|numberSigned"
             android:textSize="21sp" />
 
     </com.google.android.material.textfield.TextInputLayout>

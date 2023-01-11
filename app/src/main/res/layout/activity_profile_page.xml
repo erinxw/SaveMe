@@ -9,14 +9,14 @@
 
 
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="489dp"
-        android:layout_height="927dp"
-        android:visibility="invisible"
-        app:srcCompat="@drawable/screenshot__321_"
-        tools:layout_editor_absoluteX="-30dp"
-        tools:layout_editor_absoluteY="-29dp" />
+<!--&lt;!&ndash;    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/imageView6"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="489dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="927dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:visibility="invisible"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:srcCompat="@drawable/screenshot__321_"&ndash;&gt;-->
+<!--&lt;!&ndash;        tools:layout_editor_absoluteX="-30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        tools:layout_editor_absoluteY="-29dp" />&ndash;&gt;-->
 
     <ImageView
         android:id="@+id/imageView13"
@@ -97,35 +97,54 @@
         android:backgroundTint="#FDBE8A"
         android:fontFamily="@font/relay_didact_gothic_regular"
         android:text="Change Password"
+
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/black"
         android:textSize="21sp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        app:itemBackground="@color/bottom_nav_menu_background_color"
-        app:itemIconTint="@drawable/selector"
-        app:itemTextColor="@drawable/selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 
+    <ImageView
+        android:id="@+id/profile_Picture"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/backgrounderaser_image__5_"
+        android:scaleType="centerCrop" />
+
+
+    <!--    app:itemBackground="@color/bottom_nav_menu_background_color"-->
+    <!--    app:itemIconTint="@drawable/selector"-->
+    <!--    app:itemTextColor="@drawable/selector"-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+<!--<com.google.android.material.imageview.ShapeableImageView-->
+<!--android:id="@+id/profile_Picture"-->
+<!--android:layout_width="130dp"-->
+<!--android:layout_height="130dp"-->
+<!--android:layout_marginTop="39dp"-->
+<!--android:layout_marginEnd="35dp"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintTop_toTopOf="parent"-->
+<!--tools:srcCompat="@drawable/backgrounderaser_image__5_"-->
+<!--android:scaleType="centerCrop"-->
+
+<!--app:shapeAppearance="@style/roundedImageViewRounded"/>-->

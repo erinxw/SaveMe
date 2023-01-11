@@ -5,18 +5,33 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Calendar;
 
 public class AddIncomePage extends AppCompatActivity {
 
-    EditText date;
+    DatabaseReference DB = FirebaseDatabase.getInstance().getReferenceFromUrl("https://saveme-3a2cf-default-rtdb.firebaseio.com/")
+            .child("user").child(MainActivity.usernmae).child("TopUp");
+    DatabaseReference DBTotalSaving = FirebaseDatabase.getInstance().getReferenceFromUrl("https://saveme-3a2cf-default-rtdb.firebaseio.com/")
+            .child("user").child(MainActivity.usernmae).child("totalSaving");
+
+    public double totalSaving;
+    EditText dateadded;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +39,14 @@ public class AddIncomePage extends AppCompatActivity {
         // Show Add Income page
         setContentView(R.layout.activity_add_income_page);
 
-        date = (EditText)findViewById(R.id.enter_date);
+        final TextInputLayout enterIncomeName = findViewById(R.id.enter_income_name);
+        final TextInputLayout enterIncomeAmount = findViewById(R.id.enter_amount);
 
-        date.addTextChangedListener(new TextWatcher() {
+        final Button addIncome = findViewById(R.id.add_button);
+
+        dateadded = (EditText)findViewById(R.id.enter_date);
+
+        dateadded.addTextChangedListener(new TextWatcher() {
             private String current = "";
             private String ddmmyyyy = "DDMMYYYY";
             private Calendar cal = Calendar.getInstance();
@@ -75,13 +95,14 @@ public class AddIncomePage extends AppCompatActivity {
 
                     sel = sel < 0 ? 0 : sel;
                     current = clean;
-                    date.setText(current);
-                    date.setSelection(sel < current.length() ? sel : current.length());
+                    dateadded.setText(current);
+                    dateadded.setSelection(sel < current.length() ? sel : current.length());
 
 
 
                 }
             }
+
 
 
             @Override
@@ -90,5 +111,66 @@ public class AddIncomePage extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {}
         });
+
+        addIncome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String date = dateadded.getText().toString();
+                String topUpName = enterIncomeName.getEditText().getText().toString();
+                String topUpAmount = enterIncomeAmount.getEditText().getText().toString();
+
+                if (!date.isEmpty() && !topUpAmount.isEmpty() && !topUpName.isEmpty()) {
+
+                    DB.child("user").child(MainActivity.usernmae).addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            String entryId = DB.push().getKey();
+
+                            Data IncomeData = new Data(Double.parseDouble(topUpAmount),null,date,topUpName);
+
+                            DB.child(entryId).setValue(IncomeData);
+
+                            Toast.makeText(AddIncomePage.this, "successfull", Toast.LENGTH_SHORT).show();
+
+//                            Read the current total saving and
+//                            key in the topUp amount into the total saving part
+                            DBTotalSaving.addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    totalSaving = snapshot.getValue(double.class);
+                                    DBTotalSaving.setValue(totalSaving+Double.parseDouble(topUpAmount));
+
+
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+
+                                }
+                            });
+
+                            startActivity(new Intent(AddIncomePage.this,HomePage.class));
+
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+                }
+
+
+            }
+        });
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(AddIncomePage.this, HomePage.class);
+        startActivity(intent);
+        finish();
     }
 }
