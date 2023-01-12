@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC9C9"
+    android:background="#FFF0DE"
     tools:context=".AddSpendingPage">
 
     <ImageView
         android:id="@+id/background2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -31,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="120dp"
         android:fontFamily="@font/relay_didact_gothic_regular"
         android:text="Date"
         android:textAlignment="textStart"
@@ -47,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_weight="1"
         android:fontFamily="@font/sugo_pro_display_light_trial"
         android:text="ADD"
