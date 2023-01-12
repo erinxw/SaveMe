@@ -4,21 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFC9C9"
     tools:context=".RegistrationPage">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView5"-->
-<!--        android:layout_width="531dp"-->
-<!--        android:layout_height="918dp"-->
-<!--        android:visibility="invisible"-->
-<!--        app:srcCompat="@drawable/screenshot__317_"-->
-<!--        tools:layout_editor_absoluteX="-51dp"-->
-<!--        tools:layout_editor_absoluteY="-25dp" />-->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView5"-->
+    <!--        android:layout_width="531dp"-->
+    <!--        android:layout_height="918dp"-->
+    <!--        android:visibility="invisible"-->
+    <!--        app:srcCompat="@drawable/screenshot__317_"-->
+    <!--        tools:layout_editor_absoluteX="-51dp"-->
+    <!--        tools:layout_editor_absoluteY="-25dp" />-->
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/photo_6179343193523466843_y___copy" />
 
     <Spinner
         android:id="@+id/spinner_questions"
-        android:layout_width="345dp"
-        android:layout_height="55dp"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,8 +40,8 @@
         android:id="@+id/textView29"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/relay_didact_gothic_regular"
         android:text="Welcome!"
         android:textAlignment="textStart"
@@ -46,8 +57,8 @@
         android:id="@+id/textView31"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="107dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/relay_didact_gothic_regular"
         android:text="Username"
         android:textAlignment="textStart"
@@ -63,7 +74,7 @@
         android:id="@+id/textView32"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="35dp"
         android:fontFamily="@font/relay_didact_gothic_regular"
         android:text="Security Question"
@@ -80,8 +91,8 @@
         android:id="@+id/textView30"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
         android:fontFamily="@font/relay_didact_gothic_regular"
         android:text="Password"
         android:textAlignment="textStart"
@@ -97,18 +108,16 @@
         android:id="@+id/enter_answer"
         android:layout_width="306dp"
         android:layout_height="58dp"
-        android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView32">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/securityAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="304dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
-            android:backgroundTint="#FDBE8A"
             android:fontFamily="@font/relay_didact_gothic_regular"
             android:hint="Enter your answer"
             android:textSize="21sp" />
@@ -118,11 +127,10 @@
         android:id="@+id/textInputLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="284dp"
         app:hintTextColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView31">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/username"
@@ -130,7 +138,6 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner"
-            android:backgroundTint="#FDBE8A"
             android:fontFamily="@font/relay_didact_gothic_regular"
             android:hint="Enter your username"
             android:textSize="21sp" />
@@ -139,25 +146,24 @@
 
     <EditText
         android:id="@+id/editTextTextPassword5"
-        android:layout_width="301dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="61dp"
-        android:backgroundTint="#FDBE8A"
+        android:layout_width="311dp"
+        android:layout_height="62dp"
+        android:background="@drawable/rounded_corner"
         android:ems="10"
         android:fontFamily="@font/relay_didact_gothic_regular"
-        android:hint="Enter your password"
+        android:hint="   Enter your password"
         android:inputType="textPassword"
         android:textSize="21sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <TextView
         android:id="@+id/text_save_me7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="31dp"
         android:layout_weight="1"
         android:fontFamily="@font/sugo_pro_display_light_trial"
         android:text="REGISTRATION"
@@ -169,28 +175,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="@font/relay_didact_gothic_regular"
-        android:text="Password"
-        android:textAlignment="textStart"
-        android:textColor="#000000"
-        android:textSize="21sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
-
     <Button
         android:id="@+id/lets_start_button6"
         android:layout_width="305dp"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="35dp"
         android:backgroundTint="#FDBE8A"
         android:fontFamily="@font/relay_didact_gothic_regular"
         android:text="Let's Start"
