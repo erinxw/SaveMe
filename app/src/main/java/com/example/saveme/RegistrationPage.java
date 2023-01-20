@@ -33,7 +33,8 @@ public class RegistrationPage extends AppCompatActivity implements AdapterView.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_page);
-        final EditText setpassword = findViewById(R.id.editTextTextPassword5);
+        final EditText setpassword = findViewById(R.id.enter_password);
+        final EditText setreenterpassword = findViewById(R.id.reenter_password);
         final TextInputLayout textinputusername = findViewById(R.id.textInputLayout2);
         final TextInputLayout textinputSecurityAnswer = findViewById(R.id.enter_answer);
         final String SetQustion;
@@ -54,6 +55,7 @@ public class RegistrationPage extends AppCompatActivity implements AdapterView.O
             public void onClick(View v){
                 String setUsername = textinputusername.getEditText().getText().toString().trim();
                 String setPassword = setpassword.getText().toString();
+                String setReenterPassword = setreenterpassword.getText().toString();
                 String setSecurityAnswer = textinputSecurityAnswer.getEditText().getText().toString().trim();
 
 //              give error
@@ -61,8 +63,12 @@ public class RegistrationPage extends AppCompatActivity implements AdapterView.O
                     textinputSecurityAnswer.setError("Please give your answer");
 
 //              check all the fill answered or not
-                else if(setPassword.isEmpty() || setUsername.isEmpty() || setQuestion.isEmpty())
+                else if(setPassword.isEmpty() || setReenterPassword.isEmpty() || setUsername.isEmpty() || setQuestion.isEmpty())
                     Toast.makeText(RegistrationPage.this,"Please fill all the field", Toast.LENGTH_SHORT).show();
+
+//              ensure the password reentered is the same
+                else if(!setReenterPassword.equals(setPassword))
+                    Toast.makeText(RegistrationPage.this,"Password does not match", Toast.LENGTH_SHORT).show();
 
                 else {
 //                  check existing username
@@ -70,7 +76,7 @@ public class RegistrationPage extends AppCompatActivity implements AdapterView.O
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             if (snapshot.hasChild(setUsername)){
-                                textinputusername.setError("Username already Takken");
+                                textinputusername.setError("Username already taken");
 
                             }
                             else {
@@ -88,10 +94,10 @@ public class RegistrationPage extends AppCompatActivity implements AdapterView.O
                                 DB.child("user").child(setUsername).child("analytic").child("Entertainment").setValue(0);
                                 DB.child("user").child(setUsername).child("analytic").child("Medical").setValue(0);
                                 DB.child("user").child(setUsername).child("analytic").child("Miscellaneous").setValue(0);
-                                DB.child("user").child(setUsername).child("Montly Income").setValue(0);
+                                DB.child("user").child(setUsername).child("Monthly Income").setValue(0);
                                 DB.child("user").child(setUsername).child("recommendation").setValue(0);
-//                              show massage successfull and go to login page
-                                Toast.makeText(RegistrationPage.this,"registration successfull",Toast.LENGTH_SHORT).show();
+//                              show message successful and go to login page
+                                Toast.makeText(RegistrationPage.this,"Registration successful",Toast.LENGTH_SHORT).show();
 
 
                                 startActivity(new Intent(RegistrationPage.this, LoginPage.class));
